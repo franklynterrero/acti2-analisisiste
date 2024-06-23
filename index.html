@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Estimación y Desarrollo de Software</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h2>1. ¿Qué son los Modelos de Estimación?</h2>
+    <p>Los modelos de estimación son metodologías y herramientas utilizadas para predecir diversos aspectos de un proyecto, como su duración, esfuerzo, costo y recursos necesarios. En el contexto del desarrollo de software, estos modelos permiten a los gestores de proyectos y equipos de desarrollo realizar proyecciones informadas sobre el tiempo y los costos implicados en la creación de un sistema de software, ayudándoles a planificar y tomar decisiones estratégicas de manera más precisa.</p>
+
+    <h2>2. Diferentes Modelos de Estimación Utilizados en la Industria del Desarrollo de Software</h2>
+
+    <h3>Modelo COCOMO (Constructive Cost Model)</h3>
+    <p>El modelo COCOMO es un método de estimación de costos de software desarrollado por Barry Boehm en 1981. Este modelo utiliza una fórmula basada en el tamaño del software, medido en líneas de código (LOC), para predecir el esfuerzo, tiempo y costo de desarrollo. Existen tres niveles de COCOMO:</p>
+    <ul>
+        <li><strong>COCOMO Básico</strong>: Proporciona una estimación rápida basada en el tamaño del software.</li>
+        <li><strong>COCOMO Intermedio</strong>: Incluye factores de costo que ajustan la estimación según características del proyecto, como la experiencia del equipo y las herramientas de desarrollo.</li>
+        <li><strong>COCOMO Detallado</strong>: Añade un análisis más detallado de los componentes del proyecto y sus interacciones.</li>
+    </ul>
+
+    <h3>Método de Puntos de Función</h3>
+    <p>El método de Puntos de Función (Function Points) es una técnica de medición desarrollada por Allan Albrecht en los años 70. Este modelo mide la funcionalidad del software desde la perspectiva del usuario, evaluando las entradas, salidas, consultas, archivos lógicos y interfaces externas. Los puntos de función son luego ajustados por factores de complejidad técnica y ambiental.</p>
+
+    <h3>Comparación</h3>
+    <ul>
+        <li><strong>Enfoque</strong>:
+            <ul>
+                <li><strong>COCOMO</strong>: Se centra en las líneas de código y factores de costo relacionados con el esfuerzo de desarrollo.</li>
+                <li><strong>Puntos de Función</strong>: Se centra en la funcionalidad entregada al usuario y no depende del tamaño del código.</li>
+            </ul>
+        </li>
+        <li><strong>Adecuado para</strong>:
+            <ul>
+                <li><strong>COCOMO</strong>: Proyectos donde se puede estimar el tamaño del software en líneas de código desde etapas tempranas y donde se dispone de datos históricos de proyectos similares.</li>
+                <li><strong>Puntos de Función</strong>: Proyectos donde la funcionalidad desde la perspectiva del usuario es clara y se requiere una estimación temprana sin necesidad de conocer el tamaño del código.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>3. ¿A qué llamamos la estimación de un proyecto de software?</h2>
+    <p>La estimación de un proyecto de software se refiere al proceso de prever el esfuerzo, tiempo, costo y recursos necesarios para completar un proyecto de software. Este proceso incluye la identificación y evaluación de tareas, la asignación de tiempos y recursos, y la predicción de posibles riesgos y contingencias.</p>
+
+    <h2>4. Principios Esenciales para el Desarrollo de Sistemas</h2>
+    <ul>
+        <li><strong>Modularidad</strong>: División del sistema en módulos más pequeños y manejables.</li>
+        <li><strong>Cohesión</strong>: Grado en que los elementos dentro de un módulo están relacionados entre sí.</li>
+        <li><strong>Acoplamiento</strong>: Grado de dependencia entre módulos; idealmente, debe ser bajo.</li>
+        <li><strong>Abstracción</strong>: Ocultación de los detalles de implementación y exposición solo de las funcionalidades esenciales.</li>
+    </ul>
+
+    <h3>Ejemplo de Aplicación de la Cohesión</h3>
+    <p>En el desarrollo de un sistema de gestión de inventario, un módulo de "Gestión de Productos" debe contener todas las funciones relacionadas con los productos (como agregar, actualizar y eliminar productos) sin incluir funciones no relacionadas como el procesamiento de pagos.</p>
+
+    <h2>5. Partes Interesadas en un Proyecto de Desarrollo de Software para una Aplicación Móvil</h2>
+    <ul>
+        <li><strong>Clientes</strong>:
+            <ul>
+                <li><strong>Roles</strong>: Proporcionan requisitos y feedback.</li>
+                <li><strong>Responsabilidades</strong>: Definir necesidades y validar entregables.</li>
+                <li><strong>Expectativas</strong>: Alta calidad, usabilidad y cumplimiento de requisitos.</li>
+            </ul>
+        </li>
+        <li><strong>Equipo de Desarrollo</strong>:
+            <ul>
+                <li><strong>Roles</strong>: Programadores, diseñadores, testers.</li>
+                <li><strong>Responsabilidades</strong>: Construir y probar la aplicación.</li>
+                <li><strong>Expectativas</strong>: Claridad de requisitos y soporte técnico.</li>
+            </ul>
+        </li>
+        <li><strong>Gerente de Proyecto</strong>:
+            <ul>
+                <li><strong>Roles</strong>: Planificación y seguimiento del proyecto.</li>
+                <li><strong>Responsabilidades</strong>: Asegurar la entrega a tiempo y dentro del presupuesto.</li>
+                <li><strong>Expectativas</strong>: Cumplimiento de plazos y calidad.</li>
+            </ul>
+        </li>
+        <li><strong>Usuarios Finales</strong>:
+            <ul>
+                <li><strong>Roles</strong>: Utilizan la aplicación.</li>
+                <li><strong>Responsabilidades</strong>: Proporcionar feedback.</li>
+                <li><strong>Expectativas</strong>: Facilidad de uso y rendimiento.</li>
+            </ul>
+        </li>
+        <li><strong>Stakeholders Financieros</strong>:
+            <ul>
+                <li><strong>Roles</strong>: Inversores o patrocinadores.</li>
+                <li><strong>Responsabilidades</strong>: Proveer financiamiento.</li>
+                <li><strong>Expectativas</strong>: Retorno de inversión y eficiencia de costos.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>6. Plan de Proyecto para un Sistema de Gestión de Inventario</h2>
+    <h3>Fase 1: Iniciación</h3>
+    <ul>
+        <li><strong>Actividades</strong>: Recolección de requisitos, análisis de viabilidad.</li>
+        <li><strong>Dependencias</strong>: Ninguna.</li>
+    </ul>
+    <h3>Fase 2: Planificación</h3>
+    <ul>
+        <li><strong>Actividades</strong>: Definición del alcance, planificación del proyecto, asignación de recursos.</li>
+        <li><strong>Dependencias</strong>: Iniciación.</li>
+    </ul>
+    <h3>Fase 3: Diseño</h3>
+    <ul>
+        <li><strong>Actividades</strong>: Diseño del sistema, diseño de la base de datos.</li>
+        <li><strong>Dependencias</strong>: Planificación.</li>
+    </ul>
+    <h3>Fase 4: Desarrollo</h3>
+    <ul>
+        <li><strong>Actividades</strong>: Codificación, integración de módulos.</li>
+        <li><strong>Dependencias</strong>: Diseño.</li>
+    </ul>
+    <h3>Fase 5: Pruebas</h3>
+    <ul>
+        <li><strong>Actividades</strong>: Pruebas unitarias, pruebas de integración, pruebas del sistema.</li>
+        <li><strong>Dependencias</strong>: Desarrollo.</li>
+    </ul>
+    <h3>Fase 6: Implementación</h3>
+    <ul>
+        <li><strong>Actividades</strong>: Despliegue, capacitación de usuarios.</li>
+        <li><strong>Dependencias</strong>: Pruebas.</li>
+    </ul>
+    <h3>Fase 7: Mantenimiento</h3>
+    <ul>
+        <li><strong>Actividades</strong>: Soporte y mantenimiento, actualizaciones.</li>
+        <li><strong>Dependencias</strong>: Implementación.</li>
+    </ul>
+
+    <h2>7. Normas y Estándares en el Desarrollo de Software</h2>
+    <ul>
+        <li><strong>Estándar de Nomenclatura</strong>: Uso de nombres descriptivos para variables y funciones. Ejemplo: En lugar de <code>var1</code>, usar <code>cantidadProductos</code>.</li>
+        <li><strong>Documentación del Código</strong>: Cada función debe tener comentarios explicativos sobre su propósito y uso. Ejemplo: <code>/** Esta función calcula el total de inventario **/</code>.</li>
+        <li><strong>Control de Versiones</strong>: Uso de sistemas como Git para gestionar cambios en el código. Ejemplo: Crear ramas para nuevas funcionalidades y realizar merges solo después de la revisión de código.</li>
+        <li><strong>Revisión de Código</strong>: Implementar revisiones de código regulares por pares para garantizar la calidad. Ejemplo: Antes de fusionar una rama, otro desarrollador debe revisar y aprobar los cambios.</li>
+        <li><strong>Pruebas Automatizadas</strong>: Implementar pruebas unitarias y de integración. Ejemplo: Escribir pruebas automatizadas para verificar que una nueva funcionalidad no rompe las existentes.</li>
+    </ul>
+    <p>Al seguir estos estándares, se garantiza que el código sea consistente, comprensible y mantenible, lo que facilita el trabajo en equipo y la calidad del software.</p>
+</body>
+</html>
